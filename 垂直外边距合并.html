@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .father{
+            width: 200px;
+            height:200px;
+            background-color: green;
+            padding-top: 1px; /* 解决方法一 */
+            overflow: hidden; /* 解决方法二  完美*/
+            border: 1px solid transparent;/* 解决方法三 */
+
+        }
+        .son{
+            width: 50px;
+            height:50px;
+            background-color: red;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>
