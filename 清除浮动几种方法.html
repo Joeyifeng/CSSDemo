@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .father{
+            width: 300px;
+            background-color: green;
+        }
+        .son1{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            float: left;
+        }
+        .son2{
+            width:100px;
+            height: 200px;
+            background-color: red;
+            float: right;
+        }
+        .son3{  /* 方法一：底部的子元素插入clear:both; 元素 坏处：多一个标签 */
+            clear: both;
+        }
+        /* clearfix的方法主要就是在浮动元素的父元素上加上一个clearfix class然后这个父元素的框就会包括所有的浮动子元素。 */
+        /*简洁版*/
+        .clearfix:before, .clearfix:after {
+            content:"";
+            display:table;
+        }
+        .clearfix:after{
+            clear:both;
+            overflow:hidden;
+        }
+        .clearfix{
+            zoom:1;
+        }
+
+        /* 经典版 */
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+        * html .clearfix             { zoom: 1; } /* IE6 */
+        *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+        #demo2{
+            overflow:auto;
+            *zoom:1;
+        }
+        /*或 overflow:hidden */
+        #demo2{
+            overflow:hidden;
+            *zoom:1;
+        }
+       /*  注：overflow这种方法主要是对父元素设置css，所以不需要加个class， */
+
+    </style>
+</head>
+<body>
+    <div class="father clearfix">
+        <div class="son1"></div>
+        <div class="son2"></div>
+        <div class="son3"></div>
+    </div>
+</body>
+</html>
