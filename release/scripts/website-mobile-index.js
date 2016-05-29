@@ -106,20 +106,15 @@
       if ($target.is('a')) {
         targetSelecter = $target.data('target');
         showRouterView(targetSelecter);
-      
+        
         //当点击首页tab
         if(targetSelecter == "#productInfo"){
-          // $(".k-jumbotron").show();
           $(".k-jumbotron").show();
-          $(".k-header").addClass("k-header-show");
-
-          // $("#productInfo").css("margin-top","220px");
-          $("#productInfo").animate({marginTop:"220px"}, 200);
+          $("#productInfo").css(marginTop,"220px");
         }else{
+          $(".k-header").css("top", 0);
           $(".k-jumbotron").hide();
-          console.log("1");
         }
-
       }
 
 
