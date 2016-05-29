@@ -72,20 +72,24 @@
   // 初始化界面事件
 	function initEvent() {
 
+    // console.log($(".k-jumbotron").height());
     $(window).scroll(function(){
       var scrollTop = $(window).scrollTop();
+      var bannerHeight = $(".k-jumbotron").height();
       if(window.location.hash=="#productInfo-href"||window.location.hash==""){
-        if(scrollTop > 10){
-          $(".k-header").removeClass("k-header-show");
+        if(scrollTop > bannerHeight){
+          $(".k-header").css("top", -bannerHeight);
         }else{
-            $(".k-header").addClass("k-header-show");
+          $(".k-header").css("top", 0);
         }
       }
     });
 
     if(window.location.hash == "#productInfo-href"||window.location.hash==""){
-      $(".k-header").addClass("k-header-show");
+      // $(".k-header").addClass("k-header-show");
       $("#productInfo").css("margin-top","220px");
+    }else{
+      $(".k-jumbotron").hide();
     }
 
 
