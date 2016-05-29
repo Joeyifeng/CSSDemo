@@ -110,7 +110,7 @@
         //当点击首页tab
         if(targetSelecter == "#productInfo"){
           $(".k-jumbotron").show();
-          $("#productInfo").css(marginTop,"220px");
+          $("#productInfo").css("marginTop","220px");
         }else{
           $(".k-header").css("top", 0);
           $(".k-jumbotron").hide();
