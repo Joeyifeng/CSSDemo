@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8"> 
+  <title>快成长教育官网_快成长_互联网+教育_早教_SaaS</title> 
+  <meta name="description" content="快成长教育:基于微信的学校管理SaaS系统,服务早教培训教育机构;植根于教育行业,致力让学校教育成果更好传承,让孩子快一点成长，慢一点长大"> 
+  <meta name="keywords" content="快成长,互联网+教育,微信,学校管理,机构管理,早教,SaaS"> 
+  <link rel="stylesheet" href="./styles/website-pc-main.css">
+  <script>
+      var browser = {
+        versions: function() {
+          var u = navigator.userAgent;
+          var uLower = navigator.userAgent.toLowerCase();
+          var app = navigator.appVersion;
+
+          //移动终端浏览器版本信息
+          return {
+            //IE内核
+            trident: u.indexOf('Trident') > -1,
+
+            //opera内核
+            presto: u.indexOf('Presto') > -1,
+
+            //苹果、谷歌内核
+            webKit: u.indexOf('AppleWebKit') > -1,
+
+            //火狐内核
+            gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+
+            //ios终端
+            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+
+            //android终端或者uc浏览器
+            android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+
+            //是否为iPhone
+            iPhone: u.indexOf('iPhone') > -1,
+
+            //是否iPad
+            iPad: u.indexOf('iPad') > -1,
+
+            blackBerry: /blackberry/i.test(uLower),
+
+            //web os
+            webOS: /webos/i.test(uLower),
+
+            //window phone
+            wphone: /windows phone/i.test(uLower),
+
+            //是否web应该程序，没有头部与底部      
+            webApp: u.indexOf('Safari') == -1,
+
+            weixin: !!u.match(/MicroMessenger/i)
+          };
+        }(),
+
+        // 浏览器语言
+        language: (navigator.browserLanguage || navigator.language).toLowerCase()
+      };
+
+      var deviceVer = browser.versions;
+
+      if (deviceVer.android || deviceVer.blackBerry || deviceVer.wphone || deviceVer.webOS || deviceVer.iPhone || deviceVer.iPad || deviceVer.ios || deviceVer.weixin) {
+        window.location.href = 'mobile/index.html';
+      } 
+  </script>
+</head>
+<body class="pc pc-index">
+  <div class="navigator">
+    <ul>
+      <li class="first">
+        <a class="icon-phone"></a>
+        <div class="popup-box navigator-phone">
+          <p>客服热线：</p>
+          <p>400-181-1841</p>
+        </div>
+      </li>
+      <li>
+        <a class="icon-qq"></a>
+        <div class="popup-box navigator-qq">
+          <p>何老师：3251832092</p>
+          <p>孙老师：2778345058</p>
+        </div>
+      </li>
+      <li>
+        <a class="icon-wechat"></a>
+        <div class="popup-box navigator-wechat">
+          <p>微信：</p>
+          <p>何老师：13570974764</p>
+        </div>
+      </li>
+      <li>
+        <a class="icon-email"></a>
+        <div class="popup-box navigator-email">
+          <p>邮箱：</p>
+          <p>hezuo@igrowiser.com</p>
+        </div>
+      </li>
+    </ul>
+    <div id="gotop" class="icon-scroll scroll-top"></div>
+  </div>
+  <div class="header">
+    <div class="navbar container">
+      <h1 class="brand">
+        <img src="./images/pc/logo_life.png" alt="logo">
+      </h1>
+      <ul class="nav">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="product.html" class="active">产品介绍</a></li>
+        <li>
+          <a href="intro.html">服务中心</a> 
+          <div class="dropdown-box">
+            <ul>
+              <li><a href="intro.html#status">快成长动态</a></li>
+              <li><a href="intro.html#question">常见问题</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="contact.html">关于我们</a></li>
+      </ul>
+      <div class="side-button">
+        <div class="button-container">
+          <a href="feedback.html"><img src="./images/pc/feedback.png" alt="意见反馈"></a>
+        </div>
+        <div class="button-container">
+          <a href="http://admin.igrowiser.com/" target="_blank"><img src="./images/pc/login.png" alt="后台登陆"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="k-product-list-second">
+    <dl class="k-product-list clearfix">
+        <dd class="col-7 fl">
+          <img class="big-img" src="./images/pc/product/product_02.png">
+        </dd>
+        <dd class="col-5 fr">
+          <h3>信息化教务管理</h3>
+          <p><b>微信平台：</b>学生家长及机构老师只需绑定微信账号、一次绑定轻松使用。</p>
+          <p><b>信息管理：</b>师生信息统一录入后台，规范管理，不用担心丢失遗漏。</p>
+          <p><b>课程管理：</b>告别繁琐，后台一键排课，电脑微信均可实时查看，高效快捷。</p>
+          <p><b>签到考勤：</b>一键签到，微信实时通知到老师及学生家长，避免产生课时纠纷。</p>
+          <p><b>老师点评：</b>课堂记录+学生点评，摒弃冗杂沟通，实现高效互动，同时提升口碑</p>
+        </dd>  
+    </dl>
+  </div>
+  <div class="k-product-list-first">
+      <dl class="k-product-list clearfix">
+        <dd class=" col-6 fl">
+          <h3>独创成长树</h3>
+          <h5>记录成长轨迹：</h5>
+          <p>老师在微信端上传图文，轻松记录孩子学习的点滴时光，学生家长可在微信实时查看，增强家长参与感，同时提高学生家长对机构的好感度、忠诚度，从而提高续班率。</p>
+          <h5>沉淀教育成果：</h5>
+          <p>记录成长树更是对机构老师教育成果的沉淀和传承，成长树可传播分享，有助于宣传机构教学风格、教育成果，树立良好口碑，促进以老带新。</p>
+        </dd>
+        <dd class="col-5 fr">
+          <img class="big-img" src="./images/pc/product/product_03.png">
+        </dd>
+    </dl>
+  </div>
+  <div class="k-product-list-third">
+    <dl class="k-product-list clearfix">
+      <dd class="col-6 fl">
+        <img class="big-img" src="./images/pc/product/product_04.png">
+      </dd>
+
+      <dd class="col-6 fr">
+        <h3>精准营销工具</h3>
+        <p>快成长为机构打造专属营销利器：</p>
+        <h5>微官网：</h5>
+        <p>快成长为机构量身打造微官网，通过专属微官网可以让学生、家长更好的了解机构课程、师资实力、机构风采，同时提高机构的网络知名度、美誉度，树立品牌形象。</p>
+        <h5>预报名：</h5>
+        <p>学生、家长可通过预报名功能对感兴趣的课程进行预报名，机构老师可在后台查看到预报名的学生家长信息，并及时与对方联系。做到信息有效对接，减少招生过程中的无用功。</p>
+        <h5>灌溉小树苗：</h5>
+        <p>用户成功参与机构发布的活动（可分享到微信好友、朋友圈中请好友帮忙）后，即可获得机构的活动奖励。不仅形式有趣、吸引力强，而且传播快，效率高！</p>
+      </dd>
+    </dl>
+  </div>
+  <div class="page-footer">
+    <div class="container">
+      <a href="apply.html" class="apply-button">机构试用申请</a>
+    </div>
+  </div>
+  <div class="page-footer background-black">
+    <div class="container">
+      <p>粤ICP备16014222号</p>
+      <p>Copyright 2016 广州最喜信息科技有限公司</p>
+    </div>
+  </div>
+  <script src="./scripts/vendor-jq1x.js"></script>
+  <script src="./scripts/website-pc-index.js"></script>
+</body>
+</html>
