@@ -113,7 +113,7 @@
           $(".k-jumbotron").show();
           $("#productInfo").css("marginTop","220px");
         }else{
-          $(".k-header").css("top", 0);
+          $(".k-header").css("transform", "translate3d(0px,0px,0px)");
           $(".k-jumbotron").hide();
         }
       }
