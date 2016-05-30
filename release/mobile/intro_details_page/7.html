@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1">
+    <title>快成长教育官网_快成长_互联网+教育_早教_SaaS</title> 
+    <meta name="description" content="快成长教育:基于微信的学校管理SaaS系统,服务早教培训教育机构;植根于教育行业,致力让学校教育成果更好传承,让孩子快一点成长，慢一点长大"> 
+    <meta name="keywords" content="快成长,互联网+教育,微信,学校管理,机构管理,早教,SaaS">
+    <link rel="stylesheet" href="../../styles/website-mobile-main.css">
+    <script>
+      var browser = {
+        versions: function() {
+          var u = navigator.userAgent;
+          var uLower = navigator.userAgent.toLowerCase();
+          var app = navigator.appVersion;
+
+          //移动终端浏览器版本信息
+          return {
+            //IE内核
+            trident: u.indexOf('Trident') > -1,
+
+            //opera内核
+            presto: u.indexOf('Presto') > -1,
+
+            //苹果、谷歌内核
+            webKit: u.indexOf('AppleWebKit') > -1,
+
+            //火狐内核
+            gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+
+            //是否为移动终端
+            mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), 
+
+            //ios终端
+            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+
+            //android终端或者uc浏览器
+            android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+
+            //是否为iPhone或者QQHD浏览器
+            iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1,
+
+            //是否iPad
+            iPad: u.indexOf('iPad') > -1,
+
+            //是否web应该程序，没有头部与底部      
+            webApp: u.indexOf('Safari') == -1,
+
+            weixin: !!u.match(/MicroMessenger/i)
+          };
+        }(),
+
+        // 浏览器语言
+        language: (navigator.browserLanguage || navigator.language).toLowerCase()
+      };
+
+      var deviceVer = browser.versions;
+      if (!(deviceVer.android || deviceVer.blackBerry || deviceVer.wphone || deviceVer.webOS || deviceVer.iPhone || deviceVer.iPad || deviceVer.ios || deviceVer.weixin)) {
+        if(window.location.hash === "#serviceQa-href"){
+          window.location.href = '../intro.html';
+        }else if(window.location.hash === "#adCooperation-href"){
+          window.location.href = '../contact.html';
+        }else if(window.location.hash === "#productIntro-href"){
+          window.location.href = '../product.html';
+        }else{
+          window.location.href = '../index.html';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="k-header">
+      <nav class="k-nav">
+        <ul class="k-tabs" id="kTabs">
+          <li class="item">
+            <a class="tabs-product" data-target="#productInfo" href="#productInfo-href">产品服务</a>
+          </li>
+          <li class="item">
+            <a class="tabs-product" data-target="#productIntro" href="#productIntro-href">功能介绍</a>
+          </li>
+          <li class="item">
+            <a class="tabs-service" data-target="#serviceQa" href="#serviceQa-href">服务中心</a>
+          </li>
+          <li class="item last">
+            <a class="tabs-ad" data-target="#adCooperation" href="#adCooperation-href">关于我们</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+     <div class="intro-page">
+        <h3 class="center-align">转变交流方式，拒绝过度沟通——点评，不仅仅是点评</h3>
+        <p>相信很多老师与学生家长之间的沟通或多或少都会存在一些问题。</p>
+        <p>比如由于学生较多，老师没有足够的时间与每一位家长保持沟通；又或者有的学生通常由爷爷奶奶接送上下学，老师少有跟家长正面接触的机会，通过学生的爷爷奶奶将老师的反馈传达给家长，效果也往往不如老师与家长直接交流来的好。</p>
+        <p class="text-orange">这就造成了家长们很多时候不清楚孩子在学校上课的内容进度、不了解孩子在学校的课堂表现以及老师对孩子的评价。</p>
+        <p>对于老师来说，每个孩子在学校的成长都值得与家长分享。虽然曾经的班级微信群、QQ群给家长与老师之间提供了交流的平台，但是随着时间的演变，群交流带来的却往往是<span class="text-oragne">过度沟通</span>和<span class="text-orange">信息超载</span>。老师无法向每一位家长有效反馈孩子的在校情况，而过度的沟通甚至干扰了老师和家长们工作以外的生活，这就成了家校互动之间的棘手问题。</p>
+        <p class="highlight bigger text-green">于是，为了给老师和家长们搭建一个更有效的信息反馈平台，快成长的“<span class="text-orange">学生手册</span>”和“<span class="text-oragne">课堂记录</span>”功能就华丽登场啦！</p>
+        <p><span class="text-orange bigger highlight">“学生手册”</span>是老师对学生的点评，老师可以通过学生手册反馈学生的课堂表现，学习建议等。这是老师与学生之间一对一的“悄悄话”，只有老师和对应的学生及其家长能查看，别人无法看到，这就保护的学生与家长的隐私，避免不必要的尴尬。</p>
+        <p><span class="text-orange bigger highlight">“课堂记录”</span>是老师对整个班级的课堂内容的记录，老师记录下本节课上课的知识点，方便学生和家长了解课程进度和回顾课堂内容，也可以写下对孩子们上课的评价、寄语等等。</p>
+        <p>运用“学生手册”和“课堂记录”的功能，能够使家长更好的了解孩子的学习情况，<span class="text-orange">增强家长对老师教学水平和成果的感知度，并且有助于老师和学校良好口碑的树立和传播，具有着长远的意义。</span></p>
+        <p><span class="highlight">需要说明的是，</span><span class="text-orange">“学生手册”和“课堂记录”这两个功能点的初衷是为了给老师的管理工作提供更便捷途径和方式，而绝对不是为了增加老师的工作量。</span></p>
+        <p><span class="highlight">若老师没有充足的时间，则不需要每一节课对每一位学生都编写学生手册。</span>老师可以选择性的对某几位特别需要向家长反馈评价，或提出建议的学生进行点评。也可以根据实际情况，分阶段的填写学生手册，争取覆盖到每一位学生。</p>
+        <p><span class="text-orange">老师也并不一定要对每一天、每一节课都编写课堂记录，</span>可以根据实际情况而定。比如课堂记录，老师根据教学的进度，可选择每周所上课的知识点，或者根据某一段时间下来所教内容的章节、构架来总结性的编写一次课堂记录。这就方便学生和家长掌握课程进度并能够回顾课堂的内容概要。</p>
+        <p class="highlight bigger">总之，老师可以根据实际情况灵活运用这两项功能，不但不会增加老师的工作量，反而会使老师的工作更有成效！</p>
+        <p>“学生手册”和“课堂记录”这两个功能的使用也非常简单：</p>
+        <p class="highlight bigger">一、学生手册</p>
+        <p class="text-orange highlight">1、老师如何编辑学生手册</p>
+        <p>（1）点击“学生手册”-->“点评”--> 选择要点评的学生。（点击图片可放大查看）</p>
+        <p>（2）点击右侧对应的“点评”按钮，录入对学生的评价-->点击“保存”，即可完成点评。</p>
+        <p>（3）若需要删除或修改点评记录，点击“查看”按钮，可查看您对该学生的点评记录，您可删除记录，或者对点评内容进行修改。</p>
+        <img src="./7/1.jpg" class="w90" alt="">
+        <p class="text-orange highlight">2、家长如何查看学生手册</p>
+        <p>（1）点击“学生手册”-->进入手册记录列表界面-->找到想要查看点评的课堂。</p>
+        <p>（2）点击“详细”按钮可进入点评的详情页面，可查看老师的课堂评语已经老师想对孩子说的“悄悄话”。</p>
+        <img src="./7/2.jpg" class="w90" alt="">
+        <p class="highlight bigger">二、课堂记录</p>
+        <p class="text-orange highlight">1、老师如何编写课堂记录</p>
+        <p>（1）点击“课堂记录”菜单，从班级列表中找到要进行记录的课堂（可通过下拉框选择时间和班级名称快速查找）。</p>
+        <p>（2）点击“编辑”-->进入编辑界面，可输入课堂内容、对学生们的点评等，点击“保存”即可。</p>
+        <p>（3）课堂记录生成后，如需修改，可按照同样的步骤进入编辑界面，修改课堂内容后点击保存即可。</p>
+        <img src="./7/3.jpg" class="w90" alt="">
+        <p class="text-orange highlight">2、家长如何查看课堂记录</p>
+        <p>（1） 点击“课堂记录”菜单，进入到课堂记录界面-->从班级列表中找到想要查看记录的班级（可通过下拉框选择时间和课程快速查找）。</p>
+        <p>（2） 点击右侧对应的“详细”按钮，即可进入查看详细课堂记录。</p>
+        <p>（3） 点击屏幕下方的“上节课”或“下节课”按钮，可转跳到上一节课或者下一节课的课堂记录。</p
+        >
+        <img src="./7/4.jpg" class="w90" alt="">
+  </div>
+    <div class="gotop"></div>    
+    <footer class="k-page-footer">
+      <p>粤ICP备16014222</p>
+      <p>Copyright 2016 广州最喜信息科技有限公司</p>
+    </footer>
+  
+    <script src="../../scripts/vendor-jq1x.js"></script>
+    <script src="../../scripts/website-mobile-index.js"></script>
+    <script>
+        $("img").bind("contextmenu", function(e){
+          return false;
+        });
+    </script>
+  </body>
+</html>
+
+
