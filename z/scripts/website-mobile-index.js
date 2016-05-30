@@ -78,9 +78,10 @@
       var bannerHeight = $(".k-jumbotron").height();
       if(window.location.hash=="#productInfo-href"||window.location.hash==""){
         if(scrollTop > bannerHeight){
-          $(".k-header").css("top", -bannerHeight);
+          $(".k-header").css("transform", "translate3d(0px,"+(-bannerHeight)+"px,0px)");
         }else{
-          $(".k-header").css("top", 0);
+          $(".k-header").css("transform", "translate3d(0px,0px,0px)");
+          // $(".k-header").css("top", 0);
         }
       }
     });
