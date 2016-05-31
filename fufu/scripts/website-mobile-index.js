@@ -98,8 +98,8 @@
     }else{
       //$(".k-jumbotron").hide();
       if($(".k-jumbotron").length!=0){
-        $(".k-nav").css({"position":"relative","top":"0px"});
-        $(".k-jumbotron").css({"opacity":"0","marginBottom":-$(".k-jumbotron").height()});
+        $(".k-nav").css({"position":"fixed","top":"0px",width:"100%"});
+        $(".k-jumbotron").css({"opacity":"0","marginBottom":-($(".k-jumbotron").height()-$(".k-nav").height())});
       }else{
         $(".k-nav").css({"position":"fixed","width":"100%","top":"0px"});
       }
