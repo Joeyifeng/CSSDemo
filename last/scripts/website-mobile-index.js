@@ -93,14 +93,13 @@
     if(window.location.hash == "#productInfo-href"||window.location.hash==""){
       // $(".k-header").addClass("k-header-show");
       // $("#productInfo").css("margin-top","220px");
-      $(".k-jumbotron").css("opacity","1");
-      $(".k-nav").css({"position":"fixed","width":"100%","top":"0px"});
+      $(".k-jumbotron").css({"opacity":"1","marginBottom":"0px"});
+      $(".k-nav").css({"position":"relative","width":"100%","top":"0px"});
     }else{
       //$(".k-jumbotron").hide();
       if($(".k-jumbotron").length!=0){
-        console.log("hello");
-        $(".k-jumbotron").css({"opacity":"0","marginBottom":-($(".k-jumbotron").height()-$(".k-nav").height())});
-        $(".k-nav").css({"position":"fixed","width":"100%","top":"0px"});
+        $(".k-nav").css({"position":"relative","top":"0px"});
+        $(".k-jumbotron").css({"opacity":"0","marginBottom":-$(".k-jumbotron").height()});
       }else{
         $(".k-nav").css({"position":"fixed","width":"100%","top":"0px"});
       }
@@ -125,8 +124,7 @@
         //当点击首页tab
         if(targetSelecter == "#productInfo"){
           $(".k-jumbotron").css({"opacity":"1","marginBottom":"0px"});
-          $(".k-nav").css({"position":"static"});
-          // $("#productInfo").css("marginTop","220px");
+          $(".k-nav").css({"position":"relative","width":"100%","top":"0px"});
         }else{
           $(".k-jumbotron").css({"opacity":"0","marginBottom":-($(".k-jumbotron").height()-$(".k-nav").height())});
           $(".k-nav").css({"position":"fixed","width":"100%"});
@@ -138,7 +136,7 @@
       //从详情页跳到主页
       if(window.location.pathname.indexOf("index")==-1){
         console.log("../index.html"+window.location.hash);
-        window.location.href = "../index.html"+targetSelecter;
+        window.location.href = "../index.html"+targetSelecter+"-href";
       }
     });
 
