@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <title>快成长教育官网_快成长_互联网+教育_早教_SaaS</title> 
+  <meta name="description" content="快成长教育:基于微信的学校管理SaaS系统,服务早教培训教育机构;植根于教育行业,致力让学校教育成果更好传承,让孩子快一点成长，慢一点长大"> 
+  <meta name="keywords" content="快成长,互联网+教育,微信,学校管理,机构管理,早教,SaaS"> 
+  <link rel="stylesheet" href="./styles/website-pc-main.css">
+  <script>
+      var browser = {
+        versions: function() {
+          var u = navigator.userAgent;
+          var uLower = navigator.userAgent.toLowerCase();
+          var app = navigator.appVersion;
+
+          //移动终端浏览器版本信息
+          return {
+            //IE内核
+            trident: u.indexOf('Trident') > -1,
+
+            //opera内核
+            presto: u.indexOf('Presto') > -1,
+
+            //苹果、谷歌内核
+            webKit: u.indexOf('AppleWebKit') > -1,
+
+            //火狐内核
+            gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+
+            //ios终端
+            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+
+            //android终端或者uc浏览器
+            android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+
+            //是否为iPhone
+            iPhone: u.indexOf('iPhone') > -1,
+
+            //是否iPad
+            iPad: u.indexOf('iPad') > -1,
+
+            blackBerry: /blackberry/i.test(uLower),
+
+            //web os
+            webOS: /webos/i.test(uLower),
+
+            //window phone
+            wphone: /windows phone/i.test(uLower),
+
+            //是否web应该程序，没有头部与底部      
+            webApp: u.indexOf('Safari') == -1,
+
+            weixin: !!u.match(/MicroMessenger/i)
+          };
+        }(),
+
+        // 浏览器语言
+        language: (navigator.browserLanguage || navigator.language).toLowerCase()
+      };
+
+      var deviceVer = browser.versions;
+
+      if (deviceVer.android || deviceVer.blackBerry || deviceVer.wphone || deviceVer.webOS || deviceVer.iPhone || deviceVer.iPad || deviceVer.ios || deviceVer.weixin) {
+        window.location.href = 'mobile/index.html';
+      } 
+  </script>
+</head>
+<body class="pc pc-index">
+  <div class="navigator">
+    <ul>
+      <li class="first">
+        <a class="icon-phone"></a>
+        <div class="popup-box navigator-phone">
+          <p>客服热线：</p>
+          <p>400-181-1841</p>
+        </div>
+      </li>
+      <li>
+        <a class="icon-qq"></a>
+        <div class="popup-box navigator-qq">
+          <p>何老师：3251832092</p>
+          <p>孙老师：2778345058</p>
+        </div>
+      </li>
+      <li>
+        <a class="icon-wechat"></a>
+        <div class="popup-box navigator-wechat">
+          <p>微信：</p>
+          <p>何老师：13570974764</p>
+        </div>
+      </li>
+      <li>
+        <a class="icon-email"></a>
+        <div class="popup-box navigator-email">
+          <p>邮箱：</p>
+          <p>hezuo@igrowiser.com</p>
+        </div>
+      </li>
+    </ul>
+    <div id="gotop" class="icon-scroll scroll-top"></div>
+  </div>
+  <div class="header">
+    <div class="navbar container">
+      <h1 class="brand">
+        <img src="./images/pc/logo_life.png" alt="logo">
+      </h1>
+      <ul class="nav">
+        <li><a href="index.html" class="active">首页</a></li>
+        <li><a href="product.html">产品介绍</a></li>
+        <li>
+          <a href="intro.html">服务中心</a>
+          <div class="dropdown-box">
+            <ul>
+              <li><a href="intro.html#status">快成长动态</a></li>
+              <li><a href="intro.html#question">常见问题</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="contact.html">关于我们</a></li>
+      </ul>
+      <div class="side-button">
+        <div class="button-container">
+          <a href="feedback.html"><img src="./images/pc/feedback.png" alt="意见反馈"></a>
+        </div>
+        <div class="button-container">
+          <a href="http://admin.igrowiser.com/" target="_blank"><img src="./images/pc/login.png" alt="后台登陆"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron">
+    <img src="./images/pc/index/index_01.png" alt="banner" class="banner">  
+  </div>
+  <div class="k-product-list-first">
+    <dl class="k-product-list center-align clearfix">
+        <dd class="col-4 fl">
+          <img class="big-img" src="./images/pc/index/index_02_01.png">
+          <p>学生、课程信息繁杂,上课时间复杂,排课麻烦,考勤混乱, 管理起来常出错、易丢失</p>
+          <p>容易产生课时纠纷,有什么办法可以让课时信息准确透明，无误传达？</p>
+          <p>有的家长，不了解课时进度，耽误了续费，老师又不好意思老是催家长交钱</p>
+        </dd>
+        <dd class="col-1">
+          <img class="fl middle" src="./images/pc/index/index_02_03.png">
+        </dd>
+        <dd class="col-4 fr">
+          <img class="big-img" src="./images/pc/index/index_02_02.png">
+          <p>快成长为您搭建信息化教务管理平台，课程管理、签到考勤，及时通知，全方位轻松搞定</p>
+        </dd>
+    </dl>
+  </div>
+  <div class="k-product-list-second">
+    <dl class="k-product-list center-align clearfix">
+        <dd class="col-4 fl">
+          <img class="big-img" src="./images/pc/index/index_03_01.png">
+          <p>教学风采没有专属展示平台,教育成果得不到传承和分享，没有形成口碑相传,以老带新</p>
+          <p>家校沟通不畅,家长们每天询问孩子在机构的表现，老师反馈起来应接不暇</p>
+          <p>学生家长对机构好感度不够,忠诚度不高,续班率低</p>
+        </dd>
+        <dd class="col-1">
+          <img class="fl middle" src="./images/pc/index/index_03_03.png">
+        </dd>
+        <dd class="col-4 fr">
+          <img class="big-img" src="./images/pc/index/index_03_02.png">
+          <p>我们独创“成长树”,沉淀教育成果,传播教学风采，提高学生家长忠诚度和续班率,促进以老带新</p>
+        </dd>
+    </dl>
+  </div>
+  <div class="k-product-list-third">
+    <dl class="k-product-list center-align clearfix">
+        <dd class="col-4 fl">
+          <img class="big-img" src="./images/pc/index/index_04_01.png">
+          <p>辛辛苦苦发传单,电话邀约,可是转化率好低,招生效果太差</p>
+          <p>品牌传播力度太弱,形式单一,没有高大上的途径来提高宣传效果</p>
+          <p>有些学生家长有报班意愿,但缺乏有效机制及时跟进，常常遗漏重要资源</p>
+        </dd>
+        <dd class="col-1">
+          <img class="fl middle" src="./images/pc/index/index_04_03.png">
+        </dd>
+        <dd class="col-4 fr">
+          <img class="big-img" src="./images/pc/index/index_04_02.png">
+          <p>快成长为您打造专属微信营销工具,招生结合互联网，不再依赖传统方式,招生更精准高效</p>
+        </dd>
+    </dl>
+  </div>
+
+  <div class="page-footer">
+    <div>
+      <img class="col-2" src="./images/pc/index/index_05_01.png" alt="">
+    </div>
+    <div class="container">
+      <ul class="clearfix">
+        <li class="fl"><img src="./images/pc/index/index_05_05.png" alt=""></li>
+        <li class="fl"><img src="./images/pc/index/index_05_06.png" alt=""></li>
+        <li class="fl"><img src="./images/pc/index/index_05_02.png" alt=""></li>
+        <li class="fl"><img src="./images/pc/index/index_05_04.png" alt=""></li>
+        <li class="fl"><img src="./images/pc/index/index_05_03.png" alt=""></li>
+      </ul>
+    </div>
+  </div>
+  <div class="page-footer background-black">
+    <div class="container">
+      <p>粤ICP备16014222号</p>
+      <p>Copyright 2016 广州最喜信息科技有限公司</p>
+    </div>
+  </div>
+  <script src="./scripts/vendor-jq1x.js"></script>
+  <script src="./scripts/website-pc-index.js"></script>
+</body>
+</html>
