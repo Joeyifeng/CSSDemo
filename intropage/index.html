@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./styles/swiper.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script>
+        (function(doc,win){
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function(){
+                    var clientWidth = docEl.clientWidth;
+                    if(!clientWidth)
+                        return ;
+                    if(clientWidth>=640){
+                        docEl.style.fontSize="100px";
+                    }else{
+                        docEl.style.fontSize=100*(clientWidth/640)+'px';
+                    }
+                };
+                if(!doc.addEventListener) 
+                    return;
+                win.addEventListener(resizeEvt,recalc,false);
+                doc.addEventListener('DOMContentLoaded',recalc,false);
+        })(document,window);
+    </script>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/1.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="nav-bar" id="tab">
+        <div class="nav-item"><a href="#game" data-target="game">游戏</a></div>
+        <div class="nav-item"><a href="#toy" data-target="toy">玩具</a></div>
+        <div class="nav-item"><a href="#book" data-target="book">书籍</a></div>
+    </div>
+    <div class="news-list" id="game">
+        <div class="list-item">
+            <div class="img">
+            <img src="./images/0.jpg" alt="">
+            </div>
+            <div class="text-intro">
+                <div class="title">
+                    <h2>这里是游戏标题</h2>
+                </div>
+                <div class="intro-msg">
+                    <p>这里是游戏段落</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="img">
+            <img src="./images/0.jpg" alt="">
+            </div>
+            <div class="text-intro">
+                <div class="title">
+                    <h2>这里是游戏标题</h2>
+                </div>
+                <div class="intro-msg">
+                    <p>这里是游戏段落</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="img">
+            <img src="./images/0.jpg" alt="">
+            </div>
+            <div class="text-intro">
+                <div class="title">
+                    <h2>这里是游戏标题</h2>
+                </div>
+                <div class="intro-msg">
+                    <p>这里是游戏段落</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="img">
+            <img src="./images/0.jpg" alt="">
+            </div>
+            <div class="text-intro">
+                <div class="title">
+                    <h2>这里是游戏标题</h2>
+                </div>
+                <div class="intro-msg">
+                    <p>这里是游戏段落</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news-list hide" id="toy">
+        <div class="list-item">
+            <div class="img">
+            <img src="./images/0.jpg" alt="">
+            </div>
+            <div class="text-intro">
+                <div class="title">
+                    <h2>这里是玩具标题</h2>
+                </div>
+                <div class="intro-msg">
+                    <p>这里是玩具段落</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="img">
+            <img src="./images/0.jpg" alt="">
+            </div>
+            <div class="text-intro">
+                <div class="title">
+                    <h2>这里是玩具标题</h2>
+                </div>
+                <div class="intro-msg">
+                    <p>这里是玩具段落</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="img">
+            <img src="./images/0.jpg" alt="">
+            </div>
+            <div class="text-intro">
+                <div class="title">
+                    <h2>这里是玩具标题</h2>
+                </div>
+                <div class="intro-msg">
+                    <p>这里是玩具段落</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="img">
+            <img src="./images/0.jpg" alt="">
+            </div>
+            <div class="text-intro">
+                <div class="title">
+                    <h2>这里是玩具标题</h2>
+                </div>
+                <div class="intro-msg">
+                    <p>这里是玩具段落</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news-list hide" id="book">
+        <div class="list-item">
+            <div class="img">
+            <img src="./images/0.jpg" alt="">
+            </div>
+            <div class="text-intro">
+                <div class="title">
+                    <h2>这里是书籍标题</h2>
+                </div>
+                <div class="intro-msg">
+                    <p>这里是书籍段落</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="img">
+            <img src="./images/0.jpg" alt="">
+            </div>
+            <div class="text-intro">
+                <div class="title">
+                    <h2>这里是书籍标题</h2>
+                </div>
+                <div class="intro-msg">
+                    <p>这里是书籍段落</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="img">
+            <img src="./images/0.jpg" alt="">
+            </div>
+            <div class="text-intro">
+                <div class="title">
+                    <h2>这里是书籍标题</h2>
+                </div>
+                <div class="intro-msg">
+                    <p>这里是书籍段落</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="img">
+            <img src="./images/0.jpg" alt="">
+            </div>
+            <div class="text-intro">
+                <div class="title">
+                    <h2>这里是书籍标题</h2>
+                </div>
+                <div class="intro-msg">
+                    <p>这里是书籍段落</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/lib/swiper.min.js"></script>
+    <script src="./scripts/lib/jquery-1.9.0.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    </script>
+</body>
+</html>
