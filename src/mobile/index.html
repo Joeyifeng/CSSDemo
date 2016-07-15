@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1">
+    <title>快成长教育官网_快成长_互联网+教育_早教_SaaS</title> 
+    <meta name="description" content="快成长教育:基于微信的学校管理SaaS系统,服务早教培训教育机构;植根于教育行业,致力让学校教育成果更好传承,让孩子快一点成长，慢一点长大"> 
+    <meta name="keywords" content="快成长,互联网+教育,微信,学校管理,机构管理,早教,SaaS">
+    <link rel="stylesheet" href="../styles/website-mobile-main.css">
+    <script>
+      var browser = {
+        versions: function() {
+          var u = navigator.userAgent;
+          var uLower = navigator.userAgent.toLowerCase();
+          var app = navigator.appVersion;
+
+          //移动终端浏览器版本信息
+          return {
+            //IE内核
+            trident: u.indexOf('Trident') > -1,
+
+            //opera内核
+            presto: u.indexOf('Presto') > -1,
+
+            //苹果、谷歌内核
+            webKit: u.indexOf('AppleWebKit') > -1,
+
+            //火狐内核
+            gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+
+            //是否为移动终端
+            mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), 
+
+            //ios终端
+            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+
+            //android终端或者uc浏览器
+            android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+
+            //是否为iPhone或者QQHD浏览器
+            iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1,
+
+            //是否iPad
+            iPad: u.indexOf('iPad') > -1,
+
+            //是否web应该程序，没有头部与底部      
+            webApp: u.indexOf('Safari') == -1,
+
+            weixin: !!u.match(/MicroMessenger/i)
+          };
+        }(),
+
+        // 浏览器语言
+        language: (navigator.browserLanguage || navigator.language).toLowerCase()
+      };
+    </script>
+    
+  </head>
+  <body>
+  <!-- 头部导航栏 -->
+   <header class="k-header">
+      <div class="k-jumbotron">
+         <img src="../images/mobile/index/index_01.png" alt="">
+         <div class="avatar">
+           <img src="../images/mobile/index/avatar.png" alt="">
+           <div class="avatar-intro">
+            <span>博士贝教育</span><br>
+            <span>Dr.Baby儿童教育</span>
+           </div>
+         </div>
+      </div>
+      <!-- 这里是网页上的tab栏，如果需要四栏变三栏可以直接注释li标签 ，如下-->
+      <!-- <li class="item">
+        <a class="tabs-product" data-target="#productInfo" href="#productInfo-href">首页</a>
+      </li> -->
+      <nav class="k-nav">
+        <ul class="k-tabs" id="kTabs">
+          <li class="item">
+            <a class="tabs-product" data-target="#productInfo" href="#productInfo-href">首页</a>
+          </li>
+          <li class="item">
+            <a class="tabs-product" data-target="#productIntro" href="#productIntro-href">师资</a>
+          </li>
+          <li class="item">
+            <a class="tabs-service" data-target="#serviceQa" href="#serviceQa-href">课程</a>
+          </li>
+          <li class="item last">
+            <a class="tabs-ad" data-target="#adCooperation" href="#adCooperation-href">关于我们</a>
+          </li>
+        </ul>
+      </nav>
+   </header>
+
+    <!-- 首页 -->
+    <section class="k-section k-product" id="productInfo">
+      <div class="k-section-list">
+        <dl class="k-product-list k-product-header col-12">
+          <dd class="col-1 fl">
+            <img class="big-img" src="../images/mobile/index/school_intro.png" alt="1">
+          </dd>
+          <dd class="fl">
+            <h5>机构介绍</h5>
+          </dd>
+        </dl>
+        <dl class="k-product-list col-12">
+          <dd class="text-title">
+            <p>博士贝儿童之家教学场地1000平方米，我们是一家集幼儿园与早教中心一体，结合国内外先进教育理念，通过混龄编班的教育模式，实施小班制教学，全面开发幼儿生活自理能力，是培养幼儿园智商、情商、体能及个性全面发展的幼儿教育机构。</p>
+          </dd>
+        </dl>
+      </div>
+      <div class="k-section-list">
+        <dl class="k-product-list k-product-header col-12">
+          <dd class="col-1 fl">
+            <img class="big-img" src="../images/mobile/index/org_intro.png" alt="1">
+          </dd>
+          <dd class="fl">
+            <h5>机构介绍</h5>
+          </dd>
+        </dl>
+        <dl class="k-product-list col-12">
+          <dd>
+            <img class="big-img" src="../images/mobile/index/intro_01.png" alt="1">
+            <!-- <a class="play-vedio" href="../media/intro.mp4">视频</a> -->
+            <!-- 这里是播放视频的按钮，如需使用按钮，则解除注释 -->
+          </dd>
+          <dd>
+            <img class="big-img" src="../images/mobile/index/intro_02.png" alt="1">
+          </dd>
+          <dd>
+            <img class="big-img" src="../images/mobile/index/intro_03.png" alt="1">
+          </dd>
+        </dl>
+      </div>
+      <div class="k-section-list col-12">
+      <dl class="k-product-list">
+        <dd class="fr">
+          <a href="#">更多>></a>
+        </dd>
+      </dl>
+      </div>
+    </section>
+   
+    <!-- 师资 -->
+    <section class="k-section bgc-gray k-product" id="productIntro">
+        <dl class="k-teacher-list">
+          <a href="./intro_details_page/teachers/teacher1.html">
+              <div class="avatar-box fl">
+                <img src="../images/mobile/intro/teacher1.png" alt="">
+              </div>
+              <div class="teacher-intro fl">
+                <h3>吴彦祖</h3>
+                <h5>课程：钢琴</h5>
+                <h5>简介：哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</h5>
+              </div>
+          </a>
+        </dl>
+        <dl class="k-teacher-list">
+          <a href="./intro_details_page/teachers/teacher1.html">
+            <div class="avatar-box fl">
+              <img src="../images/mobile/intro/teacher1.png" alt="">
+            </div>
+            <div class="teacher-intro fl">
+              <h3>吴彦祖</h3>
+              <h5>课程：钢琴</h5>
+              <h5>简介：哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</h5>
+            </div>
+          </a>
+        </dl>
+        <dl class="k-teacher-list">
+          <a href="./intro_details_page/teachers/teacher1.html">
+            <div class="avatar-box fl">
+              <img src="../images/mobile/intro/teacher1.png" alt="">
+            </div>
+            <div class="teacher-intro fl">
+              <h3>吴彦祖</h3>
+              <h5>课程：钢琴</h5>
+              <h5>简介：哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</h5>
+            </div>
+          </a>
+        </dl>
+        <dl class="k-teacher-list">
+          <a href="./intro_details_page/teachers/teacher1.html">
+            <div class="avatar-box fl">
+              <img src="../images/mobile/intro/teacher1.png" alt="">
+            </div>
+            <div class="teacher-intro fl">
+              <h3>吴彦祖</h3>
+              <h5>课程：钢琴</h5>
+              <h5>简介：哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</h5>
+            </div>
+          </a>
+        </dl>
+        <dl class="k-teacher-list">
+          <a href="./intro_details_page/teachers/teacher1.html">
+            <div class="avatar-box fl">
+              <img src="../images/mobile/intro/teacher1.png" alt="">
+            </div>
+            <div class="teacher-intro fl">
+              <h3>吴彦祖</h3>
+              <h5>课程：钢琴</h5>
+              <h5>简介：哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</h5>
+            </div>
+          </a>
+        </dl>
+    </section>
+    
+    <!-- 课程 -->
+    <section class="k-section bgc-gray" id="serviceQa">
+        <div class="k-lesson-list">
+          <dl class="col-12">
+            <dt>
+              <h6>1~6岁幼儿日托、晚托、寒暑假托：</h6>
+            </dt>
+            <dd>
+              <p>将启蒙课程，探索课程，感官数学课程，音乐课程，美劳课程等贯通课堂中，激发孩子浓厚的学习兴趣，提高孩子的文化艺术素养。</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="k-lesson-list">
+          <dl class="col-12">
+            <dt>
+              <h6>小学1-6年级托管班：</h6>
+            </dt>
+          </dl>
+          <dl class="col-12">
+            <dd>
+              <p>按年级分班授课，辅导完成作业，各科加强训练，组织文体娱乐活动和集体活动。</p>
+              <!-- <img class="big-img" src="../images/mobile/index/intro_02.png" alt="1"> -->
+              <!-- 在课程tab栏目下进行添加图片，可以解除注释 -->
+            </dd>
+          </dl>
+        </div>
+        <div class="k-lesson-list">
+          <dl class="col-12">
+            <dt>
+              <h6>各年龄层儿童兴趣班：</h6>
+            </dt>
+          </dl>
+          <dl class="col-12">
+            <dd>
+              <p>创意美术，剑桥多媒体主题英语，书法，围棋，拼音，珠心算等。</p>
+            </dd>
+          </dl>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section class="k-section bgc-gray" id="adCooperation">
+        <dl class="k-product-list col-12">
+          <dd>
+            <a href="./intro_details_page/aboutUs/aboutUs1.html#adCooperation-href">
+              <img class="big-img" src="../images/mobile/aboutUs/org.png" alt="1">
+              <p class="img-intro">机构</p>
+            </a>
+          </dd>
+          <dd>
+            <a href="./intro_details_page/aboutUs/aboutUs1.html#adCooperation-href">
+              <img class="big-img" src="../images/mobile/aboutUs/activity.png" alt="1">
+              <p class="img-intro">活动</p>
+            </a>
+          </dd>
+          <dd>
+            <a href="./intro_details_page/aboutUs/aboutUs1.html#adCooperation-href">
+              <img class="big-img" src="../images/mobile/aboutUs/teacher.png" alt="1">
+              <p class="img-intro">老师</p>
+            </a>
+          </dd>
+          <dd>
+            <a href="./intro_details_page/aboutUs/aboutUs1.html#adCooperation-href">
+              <img class="big-img" src="../images/mobile/aboutUs/student.png" alt="1">
+              <p class="img-intro">学生</p>
+            </a>
+          </dd>
+          <div class="k-aboutUs-list">
+            <dt>
+              <p><i class="icon icon-phone"></i>联系我们</p>
+            </dt>
+            <dd>
+              <span><i class="icon icon-person"></i>范冰冰</span>
+            </dd>
+            <dd>
+              <span><i class="icon icon-iphone"></i>400400400</span>
+            </dd>
+            <dd>
+              <span><i class="icon icon-location"></i>广东省天河区测绘大厦</span>
+            </dd>
+          </div>
+        </dl>
+    </section>
+
+    <!-- 返回顶部 -->
+    <!-- <div id="toTop" class="toTop-circle icon-toTop icon"></div> -->  
+    <!-- icp信息  -->
+    <footer class="k-page-footer">
+      <div class="footer-info">
+        <img class="col-2" src="../images/mobile/index/logo.png" alt="">
+        <a href="http://www.igrowiser.com">由快成长提供技术支持</a>
+      </div>
+    </footer>
+
+    <!-- 活动信息 -->
+    <section class="k-page-activity">
+      <a href="#">预约报名</a>
+    </section>
+  
+    <script src="../scripts/vendor-jq1x.js"></script>
+    <script src="../scripts/website-mobile-index.js"></script>
+    <script>
+        $("img").bind("contextmenu", function(e){
+          return false;
+        });
+    </script>
+  </body>
+</html>

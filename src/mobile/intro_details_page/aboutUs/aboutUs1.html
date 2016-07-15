@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1">
+    <title>快成长教育官网_快成长_互联网+教育_早教_SaaS</title> 
+    <meta name="description" content="快成长教育:基于微信的学校管理SaaS系统,服务早教培训教育机构;植根于教育行业,致力让学校教育成果更好传承,让孩子快一点成长，慢一点长大"> 
+    <meta name="keywords" content="快成长,互联网+教育,微信,学校管理,机构管理,早教,SaaS">
+    <link rel="stylesheet" href="../../../styles/website-mobile-main.css">
+    <script>
+      var browser = {
+        versions: function() {
+          var u = navigator.userAgent;
+          var uLower = navigator.userAgent.toLowerCase();
+          var app = navigator.appVersion;
+
+          //移动终端浏览器版本信息
+          return {
+            //IE内核
+            trident: u.indexOf('Trident') > -1,
+
+            //opera内核
+            presto: u.indexOf('Presto') > -1,
+
+            //苹果、谷歌内核
+            webKit: u.indexOf('AppleWebKit') > -1,
+
+            //火狐内核
+            gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+
+            //是否为移动终端
+            mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), 
+
+            //ios终端
+            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+
+            //android终端或者uc浏览器
+            android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+
+            //是否为iPhone或者QQHD浏览器
+            iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1,
+
+            //是否iPad
+            iPad: u.indexOf('iPad') > -1,
+
+            //是否web应该程序，没有头部与底部      
+            webApp: u.indexOf('Safari') == -1,
+
+            weixin: !!u.match(/MicroMessenger/i)
+          };
+        }(),
+
+        // 浏览器语言
+        language: (navigator.browserLanguage || navigator.language).toLowerCase()
+      };
+    </script>
+  </head>
+  <body>
+    <header class="k-header">
+      <nav class="k-nav">
+        <ul class="k-tabs" id="kTabs">
+          <li class="item">
+            <a class="tabs-product" data-target="#productInfo" href="#productInfo-href">首页</a>
+          </li>
+          <li class="item">
+            <a class="tabs-product" data-target="#productIntro" href="#productIntro-href">师资</a>
+          </li> 
+          <li class="item">
+            <a class="tabs-service" data-target="#serviceQa" href="#serviceQa-href">课程</a>
+          </li>
+          <li class="item last">
+            <a class="tabs-ad" data-target="#adCooperation" href="#adCooperation-href">关于我们</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+        <!-- 关于我们 -->
+    <div class="mt-50">
+        <dl class="k-product-list col-12">
+          <dd>
+            <img class="big-img" src="../../../images/mobile/aboutUs/intro_01.png" alt="1">
+          </dd>
+          <dd>
+            <img class="big-img" src="../../../images/mobile/aboutUs/intro_02.png" alt="1">
+          </dd>
+          <dd>
+            <img class="big-img" src="../../../images/mobile/aboutUs/intro_03.png" alt="1">
+          </dd>
+          <div class="k-aboutUs-list">
+            <dt>
+              <p><i class="icon icon-phone"></i>联系我们</p>
+            </dt>
+            <dd>
+              <span><i class="icon icon-person"></i>范冰冰</span>
+            </dd>
+            <dd>
+              <span><i class="icon icon-iphone"></i>400400400</span>
+            </dd>
+            <dd>
+              <span><i class="icon icon-location"></i>广东省天河区测绘大厦</span>
+            </dd>
+          </div>
+        </dl>
+    </div>
+    <footer class="k-page-footer">
+      <div class="footer-info">
+        <img class="col-2" src="../../../images/mobile/index/logo.png" alt="">
+        <a href="#">由快成长提供技术支持</a>
+      </div>
+    </footer>
+    <!-- 活动信息 -->
+    <section class="k-page-activity">
+      <a href="#">预约报名</a>
+    </section>
+  
+    <script src="../../../scripts/vendor-jq1x.js"></script>
+    <script src="../../../scripts/website-mobile-index.js"></script>
+    <script>
+        $("img").bind("contextmenu", function(e){
+          return false;
+        });
+    </script>
+  </body>
+</html>
+
+
