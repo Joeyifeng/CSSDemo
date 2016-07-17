@@ -19,6 +19,7 @@ html {
  */
 body {
   margin: 0; 
+  padding-bottom: 40px;
 }
 
 /* HTML5 display definitions
@@ -777,7 +778,7 @@ li {
   overflow: hidden;
   padding-top: 10px; }
 
-.k-section-list dd h5 {
+dd h5 {
   line-height: 24px;
   font-size: 17px;
   font-weight: normal;
@@ -1195,7 +1196,6 @@ li {
   padding-bottom: 2px;
   height:70px;
   padding-top: 1px; 
-  margin-bottom: 40px;
 }
 
 .k-page-footer .footer-info{
